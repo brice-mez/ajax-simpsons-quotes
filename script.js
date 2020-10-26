@@ -22,3 +22,7 @@ function fetchSimpsonsJSON() {
   }
   
   fetchSimpsonsJSON();
+
+document.querySelector('.reload').addEventListener('click', function() {
+    document.querySelector('simpsons').innerHTML = fetchSimpsonsJSON();
+})  
